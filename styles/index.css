@@ -1,7 +1,7 @@
 body {
     margin: auto;
     max-width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     background-color: black;
     background-size: 144px 81px;
     background-image: linear-gradient(to right, #1a2347 1px, transparent 1px),
@@ -150,17 +150,29 @@ h1 {
     color:#FFFFFF;
     display: flex;
 }
-
+/*
 img {
     margin-top: 45px;
     max-width: 864px;
     max-height: 378px;
+}
+*/
+
+@media screen and (min-width: 1001px) and (max-width: 1440px) {
+    .img-bottom {
+        background-image: url(../images/mountain-medium.png);
+        margin-top: 45px;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     h1 {
         font-size: 72px;
         line-height: 1.15;
+    }
+
+    .nav {
+        margin-bottom: 65px;
     }
 
     .nav_link {
@@ -178,11 +190,17 @@ img {
         flex-direction: row;
     }
 
+    .img-bottom {
+        background-image: url(../images/mountain-medium.png);
+        margin-top: 40px;
+    }
+/*
     img {
        max-width: 617px;
        max-height: 512px;
        margin-top: 45px; 
     }
+*/
 }
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
@@ -202,13 +220,19 @@ img {
         height: 49px;
         display: flex;
         line-height: 1.25;
+        margin-bottom: 40px;
     }
 
+    .img-bottom {
+        background-image: url(../images/mountain-small.png);
+        margin-top: 20px;
+    }
+/*
     img {
        width: 256px;
        height: 284px;
     }
-
+*/
     .nav_link {
         visibility: hidden;
     }
